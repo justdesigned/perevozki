@@ -18,12 +18,15 @@
 }
 @font-face {
   font-family: Rubik;
-  src: local(Roboto), url(/fonts/Rubik-Regular.ttf) format("truetype");
+  src: local(Rubik), url(/fonts/Rubik-Regular.ttf) format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 body {
   font-size: 16px;
+  line-height: 1.6;
+  font-family: Roboto;
+  font-weight: normal;
 }
 
 h1 {
@@ -101,12 +104,14 @@ h3 {
   background-color: #f9ca47;
   padding: 10px 0;
   position: fixed;
+  z-index: 9999;
   top: 0;
   width: 100%;
   border-bottom: 1px solid #fff;
 }
 .header-logo {
   padding: 0 15px;
+  display: flex;
 }
 .header-menu {
   padding: 0 15px;
@@ -141,32 +146,64 @@ h3 {
   padding: 50px 0;
 }
 
+.rates-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+
 .rate {
-  width: 50%;
+  width: 100%;
   border: solid 1px #F9CA47;
   margin: 15px;
+  padding: 55px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.rate__img {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s;
+}
+.rate__img img {
+  width: 80%;
+}
+.rate:hover .rate__img {
+  transform: scale(1.1);
 }
 .rate__title {
   font-family: Roboto;
   font-weight: 700;
   font-size: 1.9rem;
+  margin-top: 25px;
+  text-align: center;
 }
-.rate__descr {
-  display: flex;
+.rate__btn {
+  margin-top: 40px;
 }
+
 table {
   border-collapse: collapse;
+  margin-top: 15px;
 }
 
 table tr {
   border: 1px solid #F9CA47;
 }
 
-table td {
+td {
   padding: 10px;
+}
+
+.table--center td {
+  text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
