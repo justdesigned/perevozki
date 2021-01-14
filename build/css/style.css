@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: local(Roboto), url(/fonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: local(Roboto), url(/fonts/Roboto-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Rubik;
+  src: local(Roboto), url(/fonts/Rubik-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.title--l {
+  color: #565656;
+  font-family: Roboto;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #565656;
+  font-family: Roboto;
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #bf3f3f;
+  border-radius: 40px;
+  padding: 23px 34px 20px 42px;
+  text-decoration: none;
+  font-family: Rubik;
+  transition: background-color 0.3s;
+}
+.btn-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 80px;
+}
+.btn__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-size: 20px;
+}
+.btn__icon {
+  margin-left: 25px;
+  width: 22px;
+  height: 22px;
+}
+.btn ~ .btn {
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: #f9ca47;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.flex-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  background-color: #f9ca47;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+.header-logo {
+  padding: 0 15px;
+}
+.header-menu {
+  padding: 0 15px;
+}
+.header-menu__list {
+  display: flex;
+  list-style: none;
+}
+.header-menu__list-item ~ .header-menu__list-item {
+  margin-left: 25px;
+}
+.header-menu__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #565656;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+}
+
+.hero {
+  padding: 140px 0 150px;
+  background-image: url("/img/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.rates {
+  padding: 50px 0;
+}
+
+.rate {
+  width: 50%;
+  border: solid 1px #F9CA47;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.rate__title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+.rate__descr {
+  display: flex;
+}
+table {
+  border-collapse: collapse;
+}
+
+table tr {
+  border: 1px solid #F9CA47;
+}
+
+table td {
+  padding: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
